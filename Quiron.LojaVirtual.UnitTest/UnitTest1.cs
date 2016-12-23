@@ -20,8 +20,8 @@ namespace Quiron.LojaVirtual.UnitTest
                 ItensTotal = 28
             };
             Func<int, string> paginaUrl = i => "Pagina" + i;
-            //MvcHtmlString resultado = html.PageLinks(paginacao, paginaUrl);
-            string resultado = html.PageLinks(paginacao, paginaUrl);
+            MvcHtmlString resultado = html.PageLinks(paginacao, paginaUrl);
+            //string resultado = html.PageLinks(paginacao, paginaUrl);
 
             Assert.AreEqual(
                 @"<a class=""btn btn-default"" href=""Pagina1"">1</a>"
